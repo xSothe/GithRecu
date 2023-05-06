@@ -10,7 +10,11 @@ public class Main {
         p.nombre = "Manolo"; // Cambio de nombre. No se debe permitir
         p.fechaContratacion = new Date(99, Calendar.FEBRUARY, 1); // Cambio de fecha. No se debe permitir
 
-        //p.nombre = "Manolo";
-        //p.fechaContratacion = new Date(99, Calendar.FEBRUARY, 1);
+
+        p.edad = -31; // Ahora acepta edades negativas
+
+        Empleado p2 = new Empleado("Pepe Pérez", -31, new Date(90, Calendar.FEBRUARY, 1));
+        System.out.println(p);
+
     }
 }
