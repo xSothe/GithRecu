@@ -1,10 +1,10 @@
 import java.util.Date;
 
 class Empleado {
-    final String nombre;
+    private final String nombre;
     private int edad;
     int edad;
-    final Date fechaContratacion;
+    private final Date fechaContratacion;
 
     private Empleado(String nombre, int edad, Date fechaContratacion) {
         if (edad < 0) throw new RuntimeException("Un empleado no puede tener edad negativa");
@@ -14,6 +14,17 @@ class Empleado {
     Empleado(String name, Date birthDate) {
         this.nombre = name;
         this.birthDate = birthDate;
+    }
+    public String getNombre() {
+        return nombre;
+    }
+
+    public int getEdad() {
+        return edad;
+    }
+
+    public Date getFechaContratacion() {
+        return fechaContratacion;
     }
     @Override
     public String toString() {
