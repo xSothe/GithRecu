@@ -1,5 +1,5 @@
 import java.util.Calendar;
-import java.util.Date;
+import java.util.Date;import java.time.LocalDate;
 
 public class Main {
     public static void main(String[] args) {
@@ -19,7 +19,6 @@ public class Main {
 
         System.out.println("Si quiero mostrar solo el nombre: " + p.getNombre());
         System.out.println("Si quiero mostrar solo la edad: " + p.getEdad());
-        
         /* Aunque la variable fechaContratación es inmutable (final), su tipo (Date) es mutable, de modo que
         todavía podría modificarse así: */
         p.getFechaContratacion().setYear(10);
@@ -27,5 +26,9 @@ public class Main {
         /* Además, Date es una clase de la primera versión de Java que solo almacena dos dígitos para años, de modo
         que al ponerle el año 10 pensando en 2010, nos encontraremos que no sabemos si se refiere a 1910. */
         System.out.println("Nueva fecha de contratación: " + p.getFechaContratacion().getYear());
+
+        /* Para el manejo de fechas, se debe utilizar LocalDate en lugar de Date.
+        LocalDate es inmutable y almacena años completos, además de otras muchas mejoras.  */
+        System.out.println("Año de contratación: " + p.getFechaContratacion().getYear());
     }
 }
