@@ -2,7 +2,8 @@ import java.util.Date;
 
 class Empleado {
     final String nombre;
-    Date birthDate;
+    int edad;
+    final Date fechaContratacion;
 
     Empleado(String name, Date birthDate) {
         this.nombre = name;
