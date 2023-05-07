@@ -1,6 +1,6 @@
 EjercicioGit4
 
-Adjunto texto mas imagenes en PDF en el correo
+Adjunto PDF con imagenes en el correo
 
 1.Creamos una carpeta de trabajo con:
 Dos carpetas (Ordenador1 y Ordenador2), que simularán dos equipos remotos.
