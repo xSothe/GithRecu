@@ -1,12 +1,10 @@
 EjercicioGit4
 
-Adjunto PDF con imagenes en el correo
-
 1.Creamos una carpeta de trabajo con:
 Dos carpetas (Ordenador1 y Ordenador2), que simularán dos equipos remotos.
 Este README.md para ir editándolo y creando el registro de trabajo con capturas.
 Una carpeta "img" para las imágenes que serán referenciadas desde el README
-
+https://postimg.cc/YvFyr0x4
 
 
 
@@ -294,4 +292,5 @@ git checkout master
 git merge bug_deprecated_data_type
 git push
  
+
 
