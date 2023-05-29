@@ -62,8 +62,10 @@ git add .
 git commit -m "probando un objeto Persona"
 Nos queda subir la rama feat persona
 git push --set-upstream origin feat_persona o git push -u origin feat_persona
+[image2.png](https://postimg.cc/Rq93GDY2)
 
 Tercer paso:Nos cambiamos a la rama master, hacemos un merge
+[![image25.png](https://i.postimg.cc/ncG8WP5T/image25.png)](https://postimg.cc/MvHrMdzj)
 
 git checkout master
 git merge feat_persona
@@ -74,6 +76,7 @@ git push
 8.Volvemos a Ordenador1. Recordamos el estado de nuestro proyecto en este ordenador haciendo un git status y un git log. Si no nos indica que el master local está por detrás del remoto (origin/master), será necesario hacer un git fetch.
 primer paso
 Nos volvemos al directorio ordenador1
+[![image17.png](https://i.postimg.cc/6pFhf90P/image17.png)](https://postimg.cc/qNXnkHWc)
 
 ```bash
 git status
@@ -82,6 +85,7 @@ git fetch - Para comprobar los cambios echos
 ```
 9.Para poder seguir trabajando desde Ordenador1, deberíamos hacer antes de nada un pull para traernos el nuevo commit que tiene master en remoto. Sin embargo, vamos a probar qué sucedería si nos olvidamos de ello.
 Este paso no lo saltamos
+[![image32.png](https://i.postimg.cc/vZnnM5rP/image32.png)](https://postimg.cc/gxYjHXBR)
 
 git pull - Nos descarga los cambios mas rencientes de remoto a local
 10. Desarrollamos una nueva funcionalidad "feat_empleado" en su correspondiente rama.
@@ -89,16 +93,20 @@ git pull - Nos descarga los cambios mas rencientes de remoto a local
 Creamos la rama feat_empleado y nos cambiamos a rama feat_empleado
 git branch feat_empleado o git checkout -b feat_empleado
 git checkout feat_empleado
+[image38.png](https://postimg.cc/vDJ3TM2C)
 
 Durante el desarrollo, antes de hacer el primer commit en feat_empleado, detectamos que el fichero .idea/workspace.xml cambia automáticamente a menudo al abrir el proyecto en IntelliJ (es un archivo de metadatos de proyecto de IntelliJ).
 Segundo paso
 Editamos .gitignore y añadimos .idea/workspace - para que suba en remoto los cambios echos por cada cambio que hagamos.
+[![image14.png](https://i.postimg.cc/Kz1fP1XC/image14.png)](https://postimg.cc/qhd20MvG)
 
 Hacemos un primer commit para añadir .idea/workspace.xml al .gitignore. Además, como los ficheros de ese directorio ya se han añadido previamente al repositorio, tendremos que eliminarlos de él haciendo:
+[![image15.png](https://i.postimg.cc/YSsfCt4R/image15.png)](https://postimg.cc/R3wnP5LJ)
 
 git rm --cached .idea/workspace.xml
 Tercer paso
 Nos queda añadir el commit añadido workspace.xml a gitignore
+[image21.png](https://postimg.cc/f35MW8wg)
 
 git status
 git add 
@@ -107,6 +115,7 @@ Hacemos los otros 2 commits y pusheamos.
 Tercer paso
 Creamos el objeto Empleado.java y editar el Main.java
 Nos queda añadir el commit probando objeto empleado
+[![image35.png](https://i.postimg.cc/KY2hsyc9/image35.png)](https://postimg.cc/75mRfd27)
 
 git status
 git add 
@@ -114,16 +123,20 @@ git commit -m "probando objeto empleado"
 Volvemos a Editar Empleado.java y Main.java
 Nos queda añadir el commit encapsulando toString de Empleado
 
+
 git status
 git add
 git commit -m "encapsulando toString de Empleado"
+[![image6.png](https://i.postimg.cc/vmZwdt99/image6.png)](https://postimg.cc/0zFBYmV2)
 Último nos queda subir la rama correspondiente feat_empleado
 git push --set-upstream origin feat_empleado o git push -u origin feat_empleado
 Vemos todas las ramas que tenemos.
+[![image24.png](https://i.postimg.cc/nLZNGYTg/image24.png)](https://postimg.cc/FYWP9SMV)
 
 
 5.Hacemos un checkout a master para mergear. Al hacer el push detectamos que hay un conflicto. Hemos olvidado de descargarnos los cambios que habíamos hecho en el otro ordenador y que tenemos subidos a GitHub.
 Nos cambiamos a la rama master y hacemos un push "Nos da error porque no hicimos un pull para descargar los cambios en remoto a local, ahora tenemos conflicto con los nuevos cambios"
+[![image3.png](https://i.postimg.cc/Qd89Tv1T/image3.png)](https://postimg.cc/mtngxXdL)
 
 git checkout master
 git push
@@ -132,10 +145,12 @@ Podríamos hacer un pull, que implicaría un merge de la rama remota a la rama l
 
 
 git reset --hard
+[![image33.png](https://i.postimg.cc/Z5gxTTvc/image33.png)](https://postimg.cc/ZW8dHzcB)
 
 
 Ahora sí podemos hacer un pull de master sin conflicto.
 git pull
+[![image34.png](https://i.postimg.cc/g0gdwTdN/image34.png)](https://postimg.cc/d7Zgpnhy)
 
 
 
@@ -162,6 +177,7 @@ git branch bug_edad_negativa o git checkout -b
 bug_edad_negativa"feat_inmutable_fields" para evitar que se pueda cambiar el nombre y la fecha de contratación de un empleado (asumimos que las especificaciones del proyecto lo impiden, sea o no razonable).
 Segundo paso
 Cambiar de rama feat_inmutable_fields
+[![image8.png](https://i.postimg.cc/zXNJcWdw/image8.png)](https://postimg.cc/HjSDJJ1j)
 
 git checkout feat_inmutable_fields
 Tercer paso
@@ -170,6 +186,7 @@ Añadimos el commit diseñamos las pruebas de esta funcionalidad
 git status
 git add .
 git commit "diseñamos las pruebas de esta funcionalidad"
+[![image9.png](https://i.postimg.cc/1XrZQCWG/image9.png)](https://postimg.cc/m1kn3wWk)
 
 Cuarto paso
 Editamos Empleao.java y Main.java
@@ -177,6 +194,7 @@ Añadimos el commit ,ahora hay dos campos inmutables
 git status
 git add 
 git commit "ahora hay dos campos inmutables"
+[![image19.png](https://i.postimg.cc/RhHNLBZM/image19.png)](https://postimg.cc/PvdXd0Dc)
 
 
 Lo último que nos queda es subir la rama correspondiente a remoto
