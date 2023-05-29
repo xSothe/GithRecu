@@ -9,34 +9,41 @@ Una carpeta "img" para las imágenes que serán referenciadas desde el README
 
 
 2.Creamos un repositorio vacío (sin README ni gitignore) en GitHub
+[![image20.png](https://i.postimg.cc/QtXyG8TM/image20.png)](https://postimg.cc/QBybcrSL)
 
 3.Creamos un proyecto de IntelliJ en Ordenador1 con repositorio de Git y código de ejemplo.
+[![image27.png](https://i.postimg.cc/c1zXTMXC/image27.png)](https://postimg.cc/xqKv1HrV)
 
 
 
 
 4.Creamos un nuevo README.md localmente (no el presente con el registro de trabajo, que se añadirá al final sustituyendo a ese.)
 Creamos el README.md desde el proyecto en intellinj
+[image23.png](https://postimg.cc/mczMf13q)
 
 
 
 5.Realizamos un primer commit y push de la base del proyecto.
 Primer commit proyecto base con hola mundo
+[![image36.png](https://i.postimg.cc/PrGFTQZc/image36.png)](https://postimg.cc/Hj2tt564)
 
 git status
 git add .
 git commit -m "proyecto base hola mundo"
 
 Una vez que realizamos el commit lo puseamos a nuestro repositorio remoto
+[![image18.png](https://i.postimg.cc/Y0BfK8Vz/image18.png)](https://postimg.cc/5YpF85fX)
 
 
 git remote add origin https://github.com/xSothe/GithRecu
 git push -u origin master
 
 6.Clonamos el proyecto dentro de Ordenador2 y lo abrimos.
+[![image31.png](https://i.postimg.cc/d1jD3B3B/image31.png)](https://postimg.cc/5Yjfk8wY)
 
 git clone https://github.com/xSothe/GithRecu
 7.Creamos una nueva funcionalidad, para lo cual creamos una rama "feat_persona" y la desarrollamos (ver mi log de commits). Una vez lista subimos la rama (git push feat_persona). Después, nos movemos a master para hacer un merge de "feat_persona" localmente. Al no haber nuevos commits en master, el merge debería ser automático y sin conflictos. Después del merge, hacemos un push de master con los nuevos cambios añLa rama es Feat persona pero tuve q repetir el proyecto por un problemilla que me dio intellijadidos.
+[![image22.png](https://i.postimg.cc/3JVrK69h/image22.png)](https://postimg.cc/LnkFDxrQ)
 
 
 
