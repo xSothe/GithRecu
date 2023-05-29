@@ -199,6 +199,7 @@ git commit "ahora hay dos campos inmutables"
 
 Lo último que nos queda es subir la rama correspondiente a remoto
 git commit "push --set-upstream origin feat_inmutable_fields o git push -u origin feat_inmutable_fields"
+[![image30.png](https://i.postimg.cc/NG69NR8Y/image30.png)](https://postimg.cc/vDmZTgSS)
 
 "bug_edad_negativa", para asegurar que la edad de un empleado no pueda ser negativa.
 Primer paso
@@ -210,20 +211,24 @@ git status
 git add 
 git commit -m "diseñamos la prueba que muestra el error"
 
+
 Tercer paso
 Hay que editar Main.java y Empleado.java lo commiteamos information hidding:   la edad solo se puede modificar a través de un setter
 git status
 git add 
 git commit -m "information hidding: edad es solo modificable a través de un setter"
+[![image11.png](https://i.postimg.cc/PJyqdzKw/image11.png)](https://postimg.cc/sGBzcWkj)
 
 Cuarto paso
 Hay que editat Main.java y Empleado.java lo commiteamos y ya está resuelto
 git status
 git add 
 git commit -m "resuelto"
+[![image1.png](https://i.postimg.cc/YCDcxmGx/image1.png)](https://postimg.cc/YvFyr0x4)
 
 Por último lo puseamos para subirlo a remoto
 git push --set-upstream origin bug_edad_negativa
+[![image37.png](https://i.postimg.cc/gcscXsqw/image37.png)](https://postimg.cc/SjXbHWPq)
 
 Cuando ya están desarrolladas, hay que hacer el merge de ambas ramas a master solventando conflictos.
 Primer paso
@@ -237,6 +242,7 @@ git push
 Segundo paso
 Hacemos un merge bug_edad_negativa
 
+
 git merge bug_edad_negativa
 Tercer paso
 Comprobamos que tenemos un conficto al hacer merge, nos toca solucionarlo
@@ -244,6 +250,8 @@ Editamos Main.java y Empleado.java, lo comiteamos Merge branch 'bug_edad_negativ
 git status
 git add 
 git commit -m "Merge branch 'bug_edad_negativa'"
+[![image12.png](https://i.postimg.cc/sfTyDXs7/image12.png)](https://postimg.cc/6T4FMB7p)
+
 
 
 Último lo puseamos para subirlo a remoto
@@ -259,6 +267,7 @@ Modificamos Main.java y Empleado.java, para mostar el problemaLo comiteamos most
 git status
 git add 
 git commit -m "mostrando el problema"
+[![image7.png](https://i.postimg.cc/vTNp74ZK/image7.png)](https://postimg.cc/sG56sDSP)
 
 Tercer Paso
 Modificamos Main.java y Empleado.Java, los campos ahora son privados y se acceden mediante getters
@@ -266,6 +275,7 @@ Lo comiteamos los campos son privados y se accede mediante getters
 git status
 git add 
 git commit -m "los campos son privados y se accede mediante getters"
+[![image28.png](https://i.postimg.cc/W3pKQGDK/image28.png)](https://postimg.cc/sB8wWZ49)
 
 Lo puseamos para que lo suba a remoto
 git push --set-upstream origin feat_pojo o git push -u origin feat_pojo
@@ -273,6 +283,7 @@ git push --set-upstream origin feat_pojo o git push -u origin feat_pojo
 git checkout maste
 rgit merge feat_pojo
 git push
+[![image26.png](https://i.postimg.cc/QC2fx1tj/image26.png)](https://postimg.cc/y3TmLJcG)
 
 Realizamos otras mejoras en la rama bug_deprecated_data_type para solucionar los problemas de la librería obsoleta java.util.Date, y los mergeamos.
 Primer paso
@@ -286,7 +297,7 @@ git add
 git commit -m "bug_deprecated_data_type"
 Tercer paso
 Modificamos Main.java Y Empleado.Java, lo comiteamos migrado a LocalDate
-
+[![image10.png](https://i.postimg.cc/59CGD2jf/image10.png)](https://postimg.cc/pyPqFxDS)
 
 
 
@@ -294,6 +305,7 @@ Modificamos Main.java Y Empleado.Java, lo comiteamos migrado a LocalDate
 git status
 git add 
 git commit -m "migrado a LocalDate"
+[![image16.png](https://i.postimg.cc/V6jqBpLP/image16.png)](https://postimg.cc/tZ4n9rxB)
 Nos queda subirlo a remoto la rama correspondiente
 
 
@@ -308,6 +320,7 @@ Nos queda subirlo a remoto la rama correspondiente
 
 git push --set-upstream origin bug_deprecated_data_type o git push -u origin bug_deprecated_data_type
 Cuarto paso
+[![image4.png](https://i.postimg.cc/hGJG8njf/image4.png)](https://postimg.cc/p9HxxgKH)
 Nos cambiamos a la rama master, lo mergeamos y lo puseamos
 
 
