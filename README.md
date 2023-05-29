@@ -4,7 +4,7 @@ EjercicioGit4
 Dos carpetas (Ordenador1 y Ordenador2), que simularán dos equipos remotos.
 Este README.md para ir editándolo y creando el registro de trabajo con capturas.
 Una carpeta "img" para las imágenes que serán referenciadas desde el README
-https://postimg.cc/YvFyr0x4
+[![image1.png](https://i.postimg.cc/YCDcxmGx/image1.png)](https://postimg.cc/YvFyr0x4)
 
 
 
